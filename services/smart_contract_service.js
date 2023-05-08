@@ -21,7 +21,7 @@ client.setOperator(operatorId, operatorKey);
 
 async function deploySmartContract() {
   //Import the compiled contract from the HelloHedera.json file
-  let helloHedera = require("./HelloHedera.json");
+  let helloHedera = require("../contracts/HelloHedera.json");
   const bytecode = helloHedera.data.bytecode.object;
 
   //Create a file on Hedera and store the hex-encoded bytecode
